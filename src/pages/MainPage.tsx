@@ -12,11 +12,11 @@ export const MainPage = (props:any) => {
     const dispatch = useDispatch()
     const nav = useNavigate()
     const {sortTable, tables, limit} = useSelector((state:any)=> state.table)
-    const [sortId, setSortId] = useState(false);
-    const [sortTitle, setSortTitle] = useState(false);
-    const [sortDescription, setSortDescription] = useState(false);
-    let items = [];
-    for (let number = 1; number <= limit; number++) {
+    const [sortId, setSortId] = useState<boolean>(false);
+    const [sortTitle, setSortTitle] = useState<boolean>(false);
+    const [sortDescription, setSortDescription] = useState<boolean>(false);
+    let items:any[] = [];
+    for (let number:number = 1; number <= limit; number++) {
     items.push(
         <Pagination.Item onClick={()=>changeTable(number)} key={number} active={number == props.active}>
         {number}

@@ -1,0 +1,70 @@
+.main{
+    height: 100%;
+    width: 100%;
+    min-height: 67vh;
+}
+.PaginationButtons{
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    width: 100%;
+    margin-top: 20px;
+}
+.central_pagination_div{
+    display: flex;
+    justify-content: center;
+}
+.forward_div{
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 24px;
+}
+.back_div{
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+}
+.templTables{
+    display: grid;
+    grid-template-columns: 10% 45% 45%;
+    border: 1px solid #E3E6EC;
+    font-size: 13px;
+
+    @media(min-width: 1400px){
+        font-size: medium;
+    }
+}
+.start_table{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+}
+.middle_table{
+    border-left: #E3E6EC 1px solid;
+    border-right: #E3E6EC 1px solid;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+.end_table{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.not_search_elem{
+    height: 50%;
+    width: 300px;
+    position:absolute;
+    top:50%;
+    left: 50%;
+    color: black;
+    transform: translate(-50%,-50%);
+    background-image: url('../images/not_found.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}

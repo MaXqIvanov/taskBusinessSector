@@ -40,7 +40,7 @@ export const MainPage = (props:any) => {
     
   return (
       <>
-        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+        <Navbar collapseOnSelect expand="lg" className={s.navbarMainPage} bg="dark" variant="dark">
                 <Nav  className="me-auto nav_header">
                     <NavDropdown onClick={()=>{
                         sortingTable({variantSort:'id', page:props.active, isSort:sortId})
